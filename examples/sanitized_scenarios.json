@@ -1,0 +1,154 @@
+{
+  "sanitized_attack_scenarios": {
+    "notice": "These are EDUCATIONAL EXAMPLES ONLY. All malicious content has been removed or neutered. These scenarios describe attack patterns conceptually without providing weaponizable implementations.",
+
+    "scenario_1_authentication_bypass": {
+      "category": "Authentication Security",
+      "attack_family": "Authentication bypass",
+      "description": "Conceptual example of how an attacker might poison a corpus to retrieve documents about bypassing authentication when a user asks about authentication best practices.",
+
+      "target_query_concept": "[REDACTED - General query about enterprise authentication]",
+      "benign_distractors_concept": "Legitimate topics: MFA implementation, RBAC configuration, password policies",
+
+      "sleeper_document_concept": {
+        "purpose": "Establishes semantic bridge between benign authentication topics and attack concepts",
+        "structure": "Begins with legitimate security discussion, includes technical terms that overlap with both benign and malicious contexts",
+        "content_type": "SANITIZED - Would contain technical security terminology",
+        "note": "Actual implementation removed for safety"
+      },
+
+      "trigger_document_concept": {
+        "purpose": "Contains attack-relevant information that co-retrieves with sleeper",
+        "structure": "Starts with benign prefix matching sleeper semantic space, transitions to attack content",
+        "content_type": "SANITIZED - Would contain security research content",
+        "note": "Actual implementation removed for safety"
+      },
+
+      "defensive_countermeasures": {
+        "hybrid_retrieval": "BM25 component would require exact keyword matching, breaking gradient-optimized semantic attacks",
+        "query_pattern_detection": "Differential retrieval rates between benign and sensitive queries would flag suspicious documents",
+        "keyword_anomaly": "On general corpora, attack-related terms would be statistically anomalous"
+      }
+    },
+
+    "scenario_2_data_exfiltration": {
+      "category": "Data Protection",
+      "attack_family": "Data exfiltration",
+      "description": "Conceptual example of corpus poisoning to surface data extraction techniques",
+
+      "target_query_concept": "[REDACTED - General query about database access]",
+      "benign_distractors_concept": "Legitimate topics: Backup strategies, disaster recovery, data migration",
+
+      "sleeper_document_concept": {
+        "purpose": "Semantic bridging between data management and extraction",
+        "note": "Content removed - educational concept only"
+      },
+
+      "trigger_document_concept": {
+        "purpose": "Contains information about data access techniques",
+        "note": "Content removed - educational concept only"
+      },
+
+      "defensive_countermeasures": {
+        "corpus_awareness": "On FEVER-like corpora, data extraction terms are highly anomalous",
+        "semantic_drift": "Documents optimized for specific queries show unusual embedding patterns",
+        "temporal_monitoring": "Recently added documents with high retrieval rates warrant investigation"
+      }
+    },
+
+    "scenario_3_prompt_injection": {
+      "category": "LLM Security",
+      "attack_family": "Prompt injection / Jailbreaking",
+      "description": "Conceptual example of poisoning to surface prompt manipulation techniques",
+
+      "target_query_concept": "[REDACTED - General query about LLM safety]",
+      "benign_distractors_concept": "Legitimate topics: Prompt engineering, safety guardrails, RLHF alignment",
+
+      "sleeper_document_concept": {
+        "purpose": "Semantic bridge between legitimate prompt engineering and attacks",
+        "note": "Content removed - educational concept only"
+      },
+
+      "trigger_document_concept": {
+        "purpose": "Contains information about prompt manipulation",
+        "note": "Content removed - educational concept only"
+      },
+
+      "defensive_countermeasures": {
+        "query_pattern_differential": "Most effective method - shows 3.7-62× advantage over other techniques depending on corpus",
+        "hybrid_retrieval_effectiveness": "Gradient-optimized attacks achieve 0% success across all α ∈ [0.3, 0.7] in our experiments",
+        "monitoring_recommendation": "Continuous query pattern analysis with threshold α ≤ 0.2"
+      }
+    }
+  },
+
+  "benign_document_examples": {
+    "notice": "These are LEGITIMATE examples showing what benign documents look like. Safe for public release.",
+
+    "security_stack_exchange_typical": {
+      "title": "Best practices for implementing MFA in enterprise environments",
+      "content_structure": "Question about multi-factor authentication, answers discussing TOTP, SMS, hardware tokens, implementation challenges, user experience considerations",
+      "embedding_characteristics": "High semantic overlap with authentication, security, enterprise topics. Contains technical security terminology naturally.",
+      "typical_length": "450-550 tokens",
+      "domain": "Technical security"
+    },
+
+    "fever_wikipedia_typical": {
+      "title": "History of cryptography",
+      "content_structure": "Encyclopedia article covering ancient ciphers, WWII Enigma, modern encryption, key historical figures",
+      "embedding_characteristics": "General knowledge about cryptography history. Low technical density.",
+      "typical_length": "300-350 tokens",
+      "domain": "General knowledge"
+    }
+  },
+
+  "detection_guidance": {
+    "corpus_type_matters": {
+      "technical_corpora": {
+        "examples": "Security Stack Exchange, GitHub code repos, API documentation",
+        "characteristics": "High frequency of attack-related terms, diverse semantic space",
+        "recommended_detection": "Query Pattern Differential (F1: 0.171 in our experiments)",
+        "detection_difficulty": "13-62× harder than general corpora",
+        "why_hard": "Attack keywords are naturally common, semantic diversity reduces anomaly detection effectiveness"
+      },
+
+      "general_knowledge_corpora": {
+        "examples": "Wikipedia, encyclopedias, news articles",
+        "characteristics": "Low frequency of attack-related terms, more uniform semantic space",
+        "recommended_detection": "Keyword Anomaly + Query Pattern Differential",
+        "detection_difficulty": "Baseline (easier than technical corpora)",
+        "why_easier": "Attack keywords are statistically rare, clear domain boundaries"
+      }
+    },
+
+    "universal_best_practices": {
+      "primary_defense": "Deploy hybrid BM25+vector retrieval with α ≤ 0.5 (architectural defense)",
+      "secondary_monitoring": "Query Pattern Differential with corpus-appropriate thresholds",
+      "corpus_classification": "Analyze corpus properties to select detection strategy",
+      "continuous_monitoring": "Track retrieval patterns for recently added documents",
+      "incident_response": "Establish procedures for investigating flagged documents"
+    }
+  },
+
+  "what_is_NOT_included": [
+    "Working attack document implementations",
+    "Gradient optimization code for adversarial generation",
+    "Specific malicious queries that could be weaponized",
+    "Actual poisoned document text",
+    "Token-level optimization strategies",
+    "Embedding manipulation techniques",
+    "Complete attack automation pipelines"
+  ],
+
+  "what_IS_included": [
+    "Detection method implementations (5 methods)",
+    "Hybrid retrieval defense code",
+    "Evaluation metrics and statistical tests",
+    "Corpus analysis tools",
+    "Deployment guidance for defenders",
+    "Conceptual understanding of attack patterns",
+    "Defensive countermeasures and monitoring"
+  ],
+
+  "responsible_research_statement": "This repository prioritizes defensive security research. Attack concepts are described at a level sufficient for understanding defenses, but insufficient for weaponization. Researchers needing more detail for legitimate defensive research should contact the authors directly with institutional verification."
+}
