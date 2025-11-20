@@ -1,0 +1,51 @@
+# Corpus-Dependent RAG Poisoning - Defensive Research
+# Requirements for detection methods, defense implementations, and evaluation tools
+
+# Core dependencies
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Embedding and retrieval (choose your provider)
+# Option 1: Sentence Transformers (local)
+sentence-transformers>=2.2.0
+
+# Option 2: OpenAI embeddings (API-based)
+openai>=1.0.0
+
+# BM25 implementation
+rank-bm25>=0.2.2
+
+# Statistical analysis
+scikit-learn>=1.3.0
+statsmodels>=0.14.0
+
+# Visualization (for ROC curves, evaluation plots)
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Data handling
+pandas>=2.0.0
+
+# Testing and quality
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Optional: Vector databases (choose based on deployment)
+# faiss-cpu>=1.7.4  # For CPU-based similarity search
+# qdrant-client>=1.7.0  # For Qdrant vector database
+# weaviate-client>=3.25.0  # For Weaviate vector database
+# pinecone-client>=2.2.0  # For Pinecone vector database
+
+# Optional: Production deployments
+# fastapi>=0.104.0  # For API endpoints
+# uvicorn>=0.24.0  # ASGI server
+# redis>=5.0.0  # For caching
+
+# Development tools
+black>=23.10.0
+flake8>=6.1.0
+mypy>=1.6.0
+
+# Documentation
+sphinx>=7.2.0
+sphinx-rtd-theme>=1.3.0
