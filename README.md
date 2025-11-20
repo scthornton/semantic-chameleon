@@ -198,7 +198,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for guidelines.
 ## 📧 Contact
 
 **Scott Thornton**
-- Email: [your-email]
+- Email: [scthornton -at- gmail]
 - arXiv: [Link pending]
 
 **Security Issues**: Please report via [SECURITY.md](SECURITY.md)
@@ -225,3 +225,4 @@ MIT License - see [`LICENSE`](LICENSE) for details.
 **Last Updated**: November 2025
 **Paper Status**: Under review
 **Code Status**: Sanitized educational release (defensive materials only)
+
