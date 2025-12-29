@@ -1,6 +1,9 @@
 # Corpus-Dependent RAG Poisoning
 
-**Research Repository for "Corpus-Dependent RAG Poisoning: Characterizing the Attack-Defense Trade-off in Retrieval-Augmented Generation Systems"**
+[![Paper DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18080200.svg)](https://doi.org/10.5281/zenodo.18080200)
+[![Code DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18079735.svg)](https://doi.org/10.5281/zenodo.18079735)
+
+**Research Repository for "Semantic Chameleon: Corpus-Dependent Poisoning Attacks and Defenses in RAG Systems"**
 
 ⚠️ **DEFENSIVE RESEARCH ONLY**: This repository contains sanitized educational materials for understanding and defending against RAG poisoning attacks. No weaponized attack materials are included.
 
@@ -8,9 +11,11 @@
 
 ## 📄 Paper
 
-**arXiv**: https://arxiv.org/abs/XXXX.XXXXX (update after submission)
+**Paper (PDF)**: [https://doi.org/10.5281/zenodo.18080200](https://doi.org/10.5281/zenodo.18080200)
 
-**Authors**: Scott Thornton
+**Code (This Repo)**: [https://doi.org/10.5281/zenodo.18079735](https://doi.org/10.5281/zenodo.18079735)
+
+**Author**: Scott Thornton (perfecXion.ai)
 
 **Abstract**: This work characterizes how corpus composition and retrieval architecture jointly affect RAG security. We find that technical corpora are 13-62× harder to defend than general knowledge bases, and that simple hybrid BM25+vector retrieval neutralizes gradient-optimized attacks in our experiments.
 
@@ -206,14 +211,18 @@ See [`docs/ETHICAL_CONSIDERATIONS.md`](docs/ETHICAL_CONSIDERATIONS.md) for full 
 If you use this research or code, please cite:
 
 ```bibtex
-@article{thornton2025corpusdependent,
-  title={Corpus-Dependent RAG Poisoning: Characterizing the Attack-Defense Trade-off in Retrieval-Augmented Generation Systems},
-  author={Thornton, Scott},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
-  year={2025},
-  url={https://github.com/scthornton/semantic-chameleon}
+@article{thornton2025semantic,
+  author    = {Thornton, Scott},
+  title     = {Semantic Chameleon: Corpus-Dependent Poisoning Attacks and Defenses in RAG Systems},
+  year      = {2025},
+  doi       = {10.5281/zenodo.18080200},
+  url       = {https://doi.org/10.5281/zenodo.18080200},
+  publisher = {Zenodo}
 }
 ```
+
+**Paper:** [https://doi.org/10.5281/zenodo.18080200](https://doi.org/10.5281/zenodo.18080200)
+**Code:** [https://doi.org/10.5281/zenodo.18079735](https://doi.org/10.5281/zenodo.18079735)
 
 ---
 
@@ -237,7 +246,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for guidelines.
 **Scott Thornton**
 - Website: https://perfecxion.ai
 - Email: scott@perfecxion.ai
-- arXiv: https://arxiv.org/abs/XXXX.XXXXX (update after submission)
+- Paper: [https://doi.org/10.5281/zenodo.18080200](https://doi.org/10.5281/zenodo.18080200)
 - GitHub: https://github.com/scthornton/semantic-chameleon
 
 **Security Issues**: Please report via [SECURITY.md](SECURITY.md)
@@ -262,6 +271,6 @@ MIT License - see [`LICENSE`](LICENSE) for details.
 ---
 
 **Last Updated**: December 2025
-**Paper Status**: Under submission (AISec 2025 target)
-**Code Status**: Sanitized educational release (defensive materials only)
-**New in Dec 2025**: End-to-end LLM evaluation + Production RAG case study
+**Paper DOI**: [10.5281/zenodo.18080200](https://doi.org/10.5281/zenodo.18080200)
+**Code DOI**: [10.5281/zenodo.18079735](https://doi.org/10.5281/zenodo.18079735)
+**Status**: Published on Zenodo (defensive research materials)
