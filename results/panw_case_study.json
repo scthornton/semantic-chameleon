@@ -1,0 +1,55 @@
+{
+  "experiment_metadata": {
+    "date": "2025-12-27",
+    "corpus": "Production Documentation RAG",
+    "corpus_size": 156777,
+    "embedding_model": "all-MiniLM-L6-v2",
+    "embedding_dim": 384,
+    "purpose": "Validate corpus-dependency hypothesis"
+  },
+  "corpus_statistics": {
+    "corpus_size": 156777,
+    "embedding_dim": 384,
+    "centroid_distances": {
+      "mean": 0.785,
+      "std": 0.069
+    },
+    "pairwise_distances": {
+      "mean": 1.090,
+      "std": 0.256
+    },
+    "vocabulary_characteristics": "Technical documentation with markdown, code blocks, product-specific terms"
+  },
+  "naive_attack_results": {
+    "description": "Attacks optimized for Security SE/FEVER using OpenAI embeddings",
+    "num_scenarios": 3,
+    "sleeper_retrieval_rate": 0.0,
+    "trigger_retrieval_rate": 0.0,
+    "any_retrieval_rate": 0.0,
+    "co_retrieval_rate": 0.0,
+    "benign_query_safety": 1.0
+  },
+  "adaptive_attack_results": {
+    "description": "Attacks optimized for target corpus using all-MiniLM-L6-v2",
+    "num_scenarios": 3,
+    "sleeper_retrieval_rate": 1.0,
+    "trigger_retrieval_rate": 1.0,
+    "any_retrieval_rate": 1.0,
+    "co_retrieval_rate": 1.0,
+    "avg_adapted_similarity": 0.761,
+    "avg_trigger_rank": 1,
+    "avg_sleeper_rank": 2
+  },
+  "key_findings": [
+    "Naive attacks fail completely (0% retrieval) - validates corpus-dependency",
+    "Adaptive attacks succeed reliably (100% retrieval) with #1-2 ranking",
+    "Embedding model knowledge is necessary for successful attacks",
+    "Corpus semantic properties create natural defense barrier"
+  ],
+  "defense_implications": [
+    "Non-standard embedding models provide weak defense layer",
+    "Hybrid retrieval remains effective even against adaptive attacks",
+    "Corpus-specific semantic analysis can aid detection"
+  ],
+  "notes": "Specific attack scenarios withheld. Contact authors for research access."
+}

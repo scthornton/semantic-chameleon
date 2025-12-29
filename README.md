@@ -8,7 +8,7 @@
 
 ## 📄 Paper
 
-**arXiv**: [Link pending]
+**arXiv**: https://arxiv.org/abs/XXXX.XXXXX (update after submission)
 
 **Authors**: Scott Thornton
 
@@ -19,13 +19,43 @@
 - Hybrid retrieval (α≤0.5) reduces co-retrieval to 0% across all 50 gradient-optimized attacks in our setting
 - Technical corpora show 13-62× worse detection performance than general knowledge bases
 - Query Pattern Differential emerges as most reliable detection method across corpora
+- **NEW (Dec 2025)**: End-to-end LLM evaluation shows 60% attack success rate, 80% safety bypass
+- **NEW (Dec 2025)**: Production RAG case study (156,777 docs) validates corpus-dependency hypothesis
+
+---
+
+## 🆕 December 2025 Updates
+
+### End-to-End LLM Evaluation (NEW)
+
+We extended our evaluation to demonstrate that retrieved poisoned documents actually influence LLM output:
+
+| Metric | Result |
+|--------|--------|
+| Attack Success Rate | 60% (9/15 scenarios) |
+| Safety Bypass Rate | 80% of successful attacks |
+| Response Divergence | 46% average |
+| Model Tested | GPT-4o-mini |
+
+**Key Insight**: Even with model safety training, RAG context can override guardrails. 73% of queries were refused with clean context, but 60% provided malicious instructions with poisoned context.
+
+### Production RAG Case Study (NEW)
+
+Validated corpus-dependency hypothesis against a real 156,777-document corpus:
+
+| Attack Type | Retrieval Success | Trigger Rank |
+|------------|-------------------|--------------|
+| Naive (generic) | 0% | N/A |
+| Adaptive (corpus-optimized) | 100% | #1 |
+
+**Key Insight**: Attacks don't transfer across corpora. Naive attacks fail completely; adaptive attacks using the target embedding model succeed reliably.
 
 ---
 
 ## 📁 Repository Structure
 
 ```
-corpus-dependent-rag-poisoning/
+semantic-chameleon/
 ├── README.md                          # This file
 ├── LICENSE                            # MIT License
 ├── SECURITY.md                        # Responsible disclosure policy
@@ -42,22 +72,28 @@ corpus-dependent-rag-poisoning/
 │   ├── bm25_implementation.py        # Okapi BM25 with configurable params
 │   └── README.md                     # Defense deployment guide
 │
+├── evaluation/                        # Evaluation scripts
+│   ├── metrics.py                    # Success rate, CI calculation (Wilson score)
+│   ├── statistical_tests.py          # Chi-square, effect size (Cohen's h)
+│   ├── corpus_analysis.py            # Corpus property analysis
+│   ├── e2e_llm_evaluation.py         # NEW: End-to-end LLM evaluation
+│   └── README.md                     # Evaluation methodology
+│
 ├── examples/                          # Sanitized educational examples
 │   ├── sanitized_scenarios.json      # Attack scenario descriptions (no exploits)
 │   ├── benign_document_templates.txt # Example benign document structures
 │   ├── detection_examples.py         # How to use detection framework
 │   └── README.md                     # Examples documentation
 │
-├── evaluation/                        # Evaluation scripts
-│   ├── metrics.py                    # Success rate, CI calculation (Wilson score)
-│   ├── statistical_tests.py          # Chi-square, effect size (Cohen's h)
-│   ├── corpus_analysis.py            # Corpus property analysis
-│   └── README.md                     # Evaluation methodology
-│
 ├── data/                              # Dataset information (no actual data)
 │   ├── security_se_instructions.md   # How to obtain Security Stack Exchange
 │   ├── fever_instructions.md         # How to obtain FEVER dataset
 │   └── corpus_statistics.json        # Corpus metadata (sizes, domains)
+│
+├── results/                           # NEW: Experimental results
+│   ├── e2e_evaluation_results.json   # End-to-end LLM evaluation
+│   ├── panw_case_study.json          # Production RAG case study
+│   └── README.md                     # Results documentation
 │
 ├── paper/                             # Paper materials
 │   ├── paper.pdf                     # Main paper (arXiv version)
@@ -94,8 +130,8 @@ This repository provides:
 ### Installation
 
 ```bash
-git clone https://github.com/yourusername/corpus-dependent-rag-poisoning
-cd corpus-dependent-rag-poisoning
+git clone https://github.com/scthornton/semantic-chameleon
+cd semantic-chameleon
 pip install -r requirements.txt
 ```
 
@@ -174,7 +210,8 @@ If you use this research or code, please cite:
   title={Corpus-Dependent RAG Poisoning: Characterizing the Attack-Defense Trade-off in Retrieval-Augmented Generation Systems},
   author={Thornton, Scott},
   journal={arXiv preprint arXiv:XXXX.XXXXX},
-  year={2025}
+  year={2025},
+  url={https://github.com/scthornton/semantic-chameleon}
 }
 ```
 
@@ -198,8 +235,10 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for guidelines.
 ## 📧 Contact
 
 **Scott Thornton**
-- Email: [scthornton -at- gmail]
-- arXiv: [Link pending]
+- Website: https://perfecxion.ai
+- Email: scott@perfecxion.ai
+- arXiv: https://arxiv.org/abs/XXXX.XXXXX (update after submission)
+- GitHub: https://github.com/scthornton/semantic-chameleon
 
 **Security Issues**: Please report via [SECURITY.md](SECURITY.md)
 
@@ -222,7 +261,7 @@ MIT License - see [`LICENSE`](LICENSE) for details.
 
 ---
 
-**Last Updated**: November 2025
-**Paper Status**: Under review
+**Last Updated**: December 2025
+**Paper Status**: Under submission (AISec 2025 target)
 **Code Status**: Sanitized educational release (defensive materials only)
-
+**New in Dec 2025**: End-to-end LLM evaluation + Production RAG case study
