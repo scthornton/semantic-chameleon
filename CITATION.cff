@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use this software or research, please cite it as below."
+type: software
+title: "Corpus-Dependent RAG Poisoning: Characterizing the Attack-Defense Trade-off in Retrieval-Augmented Generation Systems"
+version: 1.0.0
+date-released: 2025-12-28
+url: "https://github.com/scthornton/semantic-chameleon"
+repository-code: "https://github.com/scthornton/semantic-chameleon"
+license: MIT
+authors:
+  - family-names: "Thornton"
+    given-names: "Scott"
+    email: "scott@perfecxion.ai"
+    affiliation: "perfecXion.ai"
+    orcid: ""
+keywords:
+  - RAG security
+  - retrieval-augmented generation
+  - poisoning attacks
+  - knowledge base security
+  - LLM security
+  - adversarial machine learning
+  - hybrid retrieval
+  - corpus-dependent security
+abstract: >-
+  This work characterizes how corpus composition and retrieval architecture
+  jointly affect RAG security. We find that technical corpora are 13-62×
+  harder to defend than general knowledge bases, and that simple hybrid
+  BM25+vector retrieval neutralizes gradient-optimized attacks. Key findings
+  include 38% co-retrieval success on pure vector retrieval (n=50), 0%
+  success with hybrid retrieval (α≤0.5), 60% end-to-end LLM attack success
+  with 80% safety bypass rate, and validation of corpus-dependency through
+  production RAG case study (156,777 documents).
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Thornton"
+      given-names: "Scott"
+      affiliation: "perfecXion.ai"
+  title: "Corpus-Dependent RAG Poisoning: Characterizing the Attack-Defense Trade-off in Retrieval-Augmented Generation Systems"
+  year: 2025
+  url: "https://github.com/scthornton/semantic-chameleon"
