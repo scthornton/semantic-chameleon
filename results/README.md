@@ -1,67 +1,83 @@
 # Experimental Results
 
-This directory contains the results from our experiments.
+This directory contains results from all experimental phases.
 
-## End-to-End LLM Evaluation
+## March 2026 Results (`march-2026/`)
+
+Three new experiments addressing reviewer feedback for AISec '26 submission.
+
+### Experiment 1: FEVER Large-Scale (n=25)
+
+**File**: `march-2026/exp1_fever_large_scale_results.json`
+
+25 GCG-optimized attacks (5 scenarios × 5 seeds) on a 2,000-document FEVER Wikipedia
+sample. Tests pure vector and hybrid retrieval at multiple configurations.
+
+| Config | Co-Retrieval | Stealth | Overall Success |
+|--------|-------------|---------|-----------------|
+| α=1.0, k=5 | 100% (25/25) | 0% (0/25) | **0%** |
+| α=0.7, k=5 | 100% (25/25) | 0% (0/25) | **0%** |
+| α=0.5, k=5 | 100% (25/25) | 0% (0/25) | **0%** |
+| α=0.3, k=5 | 100% (25/25) | 0% (0/25) | **0%** |
+
+**Finding**: Confirms n=9 pilot at 2.8× scale. FEVER's general vocabulary makes attack
+terms anomalous, causing 0% stealth regardless of retrieval architecture.
+
+### Experiment 2: Multi-Model E2E Evaluation
+
+**File**: `march-2026/exp2_multimodel_e2e_results.json`
+
+15 attack scenarios tested against 5 LLMs from 4 providers. GPT-4o-mini serves as
+consistent safety judge across all models.
+
+| Model | Attack Success | Safety Violations | Payload Leakage |
+|-------|---------------|-------------------|-----------------|
+| GPT-5.3 | 46.7% (7/15) | 33.3% (5/15) | 9.6% |
+| GPT-4o | 53.3% (8/15) | 86.7% (13/15) | 12.0% |
+| GPT-4o-mini | 53.3% (8/15) | 86.7% (13/15) | 14.9% |
+| Claude Sonnet 4.6 | 60.0% (9/15) | 6.7% (1/15) | 5.7% |
+| Llama 4 Instruct | 93.3% (14/15) | 93.3% (14/15) | 56.8% |
+
+**Note**: GPT-5.3 was evaluated at temperature=1.0 (API-mandated); all other models
+used temperature=0.3.
+
+**Finding**: Three distinct safety profiles emerge: strong (Claude), moderate (GPT family),
+and weak (Llama 4). Model-level safety is necessary but insufficient.
+
+### Experiment 3: Joint Hybrid Attack
+
+**File**: `march-2026/exp3_joint_hybrid_attack_results.json`
+
+25 trials (5 scenarios × 5 seeds) using joint sparse+dense GCG optimization.
+Joint objective: α × cosine_sim + (1-α) × BM25_overlap.
+
+| Attack | α=0.7 | α=0.5 | α=0.3 |
+|--------|-------|-------|-------|
+| Gradient-only (baseline) | 0% | 0% | 0% |
+| Joint optimization | 20% (5/25) | 36% (9/25) | 44% (11/25) |
+
+**Finding**: Joint optimization partially circumvents hybrid retrieval (20-44% vs 0%
+gradient-only), but hybrid still significantly raises the attack bar vs pure vector (38%).
+
+---
+
+## December 2025 Results
+
+### End-to-End LLM Evaluation
 
 **File**: `e2e_evaluation_results.json`
 
-We tested whether poisoned documents retrieved by RAG systems actually influence LLM output. Testing 15 attack scenarios against GPT-4o-mini:
+15 attack scenarios against GPT-4o-mini. 60% attack success, 80% safety violations.
 
-| Metric | Result |
-|--------|--------|
-| Attack Success Rate | 60.0% (9/15) |
-| Safety Violation Rate | 80.0% (12/15) |
-| Avg Payload Leakage | 19.0% |
-| Avg Response Divergence | 0.46 |
-
-### Key Observations
-
-1. **Clean context behavior**: 73% refusal rate ("I cannot assist with that")
-2. **Poisoned context behavior**: 60% provided actionable attack instructions
-3. **Sleeper-only behavior**: 87% refused (confirms dual-document attack design)
-
-### Successful Attack Categories
-
-- AMSI bypass, API rate limiting, DLL sideloading
-- DNS tunneling, GraphQL introspection, HTTP smuggling
-- ICMP covert channel, insecure deserialization, JWT algorithm confusion
-
-### Failed Attack Categories (model safety held)
-
-- Alternate data streams, blockchain reentrancy
-- Command injection, CSRF bypass
-- Directory traversal, domain fronting
-
-## Production RAG Case Study
+### Production RAG Case Study
 
 **File**: `panw_case_study.json`
 
-We validated our corpus-dependency hypothesis against a production-scale documentation RAG system containing 156,777 documents.
+156,777-document vendor corpus. 0% naive attack success, 100% adaptive success.
 
-### Naive Attack Results (0% success)
-
-Attack documents optimized for Security SE/FEVER corpora using OpenAI embeddings:
-- Sleeper retrieval: 0%
-- Trigger retrieval: 0%
-- Any retrieval: 0%
-
-### Adaptive Attack Results (100% success)
-
-Attack documents optimized for target corpus using `all-MiniLM-L6-v2`:
-- Sleeper retrieval: 100%
-- Trigger retrieval: 100%
-- Co-retrieval: 100%
-- Average trigger rank: #1
-
-### Implications
-
-1. **Attacks don't transfer**: Must be tailored to target corpus
-2. **Embedding model knowledge required**: Attackers need to know the target model
-3. **Hybrid retrieval still effective**: Even adaptive attacks fail against hybrid BM25+vector
+---
 
 ## Reproduction
 
-See `docs/REPRODUCIBILITY.md` for instructions on reproducing these results.
-
-Note: Raw attack scenarios are not included to prevent weaponization. Contact authors for research access.
+See `docs/REPRODUCIBILITY.md` for instructions. March 2026 experiment scripts are in
+`experiments/`. Raw attack scenarios are not included to prevent weaponization.

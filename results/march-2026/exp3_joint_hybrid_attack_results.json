@@ -1,0 +1,1545 @@
+{
+  "experiment": "joint_hybrid_attack",
+  "start_time": "2026-03-08T23:10:46.163645",
+  "config": {
+    "n_trials": 25,
+    "num_iterations": 80,
+    "alpha_values": [
+      0.7,
+      0.5,
+      0.3
+    ],
+    "top_k": 5,
+    "corpus_size": 2000,
+    "attack_type": "joint_sparse_dense_gcg"
+  },
+  "trial_results": [
+    {
+      "scenario": "auth_bypass",
+      "seed": 42,
+      "configs": {
+        "alpha=0.7": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.6,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.5518282651901245,
+            "final_dense": 0.8138431310653687,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6646676659584045,
+            "final_dense": 0.8409074544906616,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.5": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.6,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.5518282651901245,
+            "final_dense": 0.8287689089775085,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6646697521209717,
+            "final_dense": 0.8409074544906616,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.3": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.4,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.5518282651901245,
+            "final_dense": 0.8138431310653687,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6646697521209717,
+            "final_dense": 0.8409074544906616,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        }
+      }
+    },
+    {
+      "scenario": "auth_bypass",
+      "seed": 123,
+      "configs": {
+        "alpha=0.7": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.4,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.5518282651901245,
+            "final_dense": 0.8297760486602783,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6646697521209717,
+            "final_dense": 0.8386874198913574,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.5": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.6,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.5518282651901245,
+            "final_dense": 0.825527548789978,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6646697521209717,
+            "final_dense": 0.8386874198913574,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.3": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.5518282651901245,
+            "final_dense": 0.825527548789978,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6646697521209717,
+            "final_dense": 0.8386874198913574,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        }
+      }
+    },
+    {
+      "scenario": "auth_bypass",
+      "seed": 456,
+      "configs": {
+        "alpha=0.7": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.4,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.5518282651901245,
+            "final_dense": 0.8233955502510071,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6646697521209717,
+            "final_dense": 0.8443011045455933,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.5": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.4,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.5518282651901245,
+            "final_dense": 0.8233955502510071,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6646697521209717,
+            "final_dense": 0.8443011045455933,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.3": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.4,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.5518282651901245,
+            "final_dense": 0.8233955502510071,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6646697521209717,
+            "final_dense": 0.8443011045455933,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        }
+      }
+    },
+    {
+      "scenario": "auth_bypass",
+      "seed": 789,
+      "configs": {
+        "alpha=0.7": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.4,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.5518282651901245,
+            "final_dense": 0.7981867790222168,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6646665334701538,
+            "final_dense": 0.8236285448074341,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.5": {
+          "co_retrieval": true,
+          "stealth": true,
+          "benign_retrieval_rate": 0.2,
+          "overall_success": true,
+          "sleeper_stats": {
+            "initial_dense": 0.5517662763595581,
+            "final_dense": 0.7981867790222168,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6646697521209717,
+            "final_dense": 0.8236285448074341,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.3": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.4,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.5518282651901245,
+            "final_dense": 0.7981867790222168,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6646697521209717,
+            "final_dense": 0.8236285448074341,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        }
+      }
+    },
+    {
+      "scenario": "auth_bypass",
+      "seed": 1024,
+      "configs": {
+        "alpha=0.7": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.6,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.5518282651901245,
+            "final_dense": 0.8084684610366821,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6646697521209717,
+            "final_dense": 0.8275526762008667,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.5": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.4,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.5518282651901245,
+            "final_dense": 0.8084684610366821,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6646697521209717,
+            "final_dense": 0.8275526762008667,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.3": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.4,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.5517554879188538,
+            "final_dense": 0.8084684610366821,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6646697521209717,
+            "final_dense": 0.8275526762008667,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        }
+      }
+    },
+    {
+      "scenario": "data_exfil",
+      "seed": 42,
+      "configs": {
+        "alpha=0.7": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.4,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.6491379737854004,
+            "final_dense": 0.853636622428894,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.7218058705329895,
+            "final_dense": 0.8654864430427551,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.5": {
+          "co_retrieval": true,
+          "stealth": true,
+          "benign_retrieval_rate": 0.2,
+          "overall_success": true,
+          "sleeper_stats": {
+            "initial_dense": 0.6491379737854004,
+            "final_dense": 0.853636622428894,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.7218058705329895,
+            "final_dense": 0.8654989004135132,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.3": {
+          "co_retrieval": true,
+          "stealth": true,
+          "benign_retrieval_rate": 0.2,
+          "overall_success": true,
+          "sleeper_stats": {
+            "initial_dense": 0.6491379737854004,
+            "final_dense": 0.853636622428894,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.7218058705329895,
+            "final_dense": 0.8654864430427551,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        }
+      }
+    },
+    {
+      "scenario": "data_exfil",
+      "seed": 123,
+      "configs": {
+        "alpha=0.7": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.4,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.6491379737854004,
+            "final_dense": 0.8546158075332642,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.7218058705329895,
+            "final_dense": 0.8605180382728577,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.5": {
+          "co_retrieval": true,
+          "stealth": true,
+          "benign_retrieval_rate": 0.2,
+          "overall_success": true,
+          "sleeper_stats": {
+            "initial_dense": 0.6491379737854004,
+            "final_dense": 0.8546158075332642,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.7218058705329895,
+            "final_dense": 0.8605180382728577,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.3": {
+          "co_retrieval": true,
+          "stealth": true,
+          "benign_retrieval_rate": 0.2,
+          "overall_success": true,
+          "sleeper_stats": {
+            "initial_dense": 0.6491379737854004,
+            "final_dense": 0.8546158075332642,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.7218058705329895,
+            "final_dense": 0.8605180382728577,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        }
+      }
+    },
+    {
+      "scenario": "data_exfil",
+      "seed": 456,
+      "configs": {
+        "alpha=0.7": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.4,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.6491379737854004,
+            "final_dense": 0.8284060955047607,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.7218058705329895,
+            "final_dense": 0.8652340173721313,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.5": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.4,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.6491379737854004,
+            "final_dense": 0.8284060955047607,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.7218058705329895,
+            "final_dense": 0.8668211698532104,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.3": {
+          "co_retrieval": true,
+          "stealth": true,
+          "benign_retrieval_rate": 0.2,
+          "overall_success": true,
+          "sleeper_stats": {
+            "initial_dense": 0.6491379737854004,
+            "final_dense": 0.8284060955047607,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.721823513507843,
+            "final_dense": 0.8619885444641113,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        }
+      }
+    },
+    {
+      "scenario": "data_exfil",
+      "seed": 789,
+      "configs": {
+        "alpha=0.7": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.4,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.6491379737854004,
+            "final_dense": 0.8318118453025818,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.7218058705329895,
+            "final_dense": 0.8654391765594482,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.5": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.4,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.6491379737854004,
+            "final_dense": 0.8364672660827637,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.7218058705329895,
+            "final_dense": 0.8654391765594482,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.3": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.4,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.6491379737854004,
+            "final_dense": 0.8364672660827637,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.721790075302124,
+            "final_dense": 0.8656915426254272,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        }
+      }
+    },
+    {
+      "scenario": "data_exfil",
+      "seed": 1024,
+      "configs": {
+        "alpha=0.7": {
+          "co_retrieval": true,
+          "stealth": true,
+          "benign_retrieval_rate": 0.2,
+          "overall_success": true,
+          "sleeper_stats": {
+            "initial_dense": 0.6491379737854004,
+            "final_dense": 0.7833417654037476,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.7218058705329895,
+            "final_dense": 0.878296434879303,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.5": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.4,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.6491379737854004,
+            "final_dense": 0.7833417654037476,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.7218058705329895,
+            "final_dense": 0.878296434879303,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.3": {
+          "co_retrieval": true,
+          "stealth": true,
+          "benign_retrieval_rate": 0.2,
+          "overall_success": true,
+          "sleeper_stats": {
+            "initial_dense": 0.6491379737854004,
+            "final_dense": 0.7833417654037476,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.7218058705329895,
+            "final_dense": 0.8777733445167542,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        }
+      }
+    },
+    {
+      "scenario": "prompt_injection",
+      "seed": 42,
+      "configs": {
+        "alpha=0.7": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.6,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.504245400428772,
+            "final_dense": 0.807551383972168,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6464857459068298,
+            "final_dense": 0.8243930339813232,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.5": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.6,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.504245400428772,
+            "final_dense": 0.807551383972168,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6464857459068298,
+            "final_dense": 0.8239655494689941,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.3": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.4,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.504245400428772,
+            "final_dense": 0.8077988624572754,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6464857459068298,
+            "final_dense": 0.8243930339813232,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        }
+      }
+    },
+    {
+      "scenario": "prompt_injection",
+      "seed": 123,
+      "configs": {
+        "alpha=0.7": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.504245400428772,
+            "final_dense": 0.8048439025878906,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6464857459068298,
+            "final_dense": 0.8141509294509888,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.5": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.6,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.504245400428772,
+            "final_dense": 0.8048439025878906,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6464857459068298,
+            "final_dense": 0.8141509294509888,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.3": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.6,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.504245400428772,
+            "final_dense": 0.8029152750968933,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6464857459068298,
+            "final_dense": 0.8377867341041565,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        }
+      }
+    },
+    {
+      "scenario": "prompt_injection",
+      "seed": 456,
+      "configs": {
+        "alpha=0.7": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.504245400428772,
+            "final_dense": 0.8126366138458252,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6464857459068298,
+            "final_dense": 0.8290996551513672,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.5": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.504245400428772,
+            "final_dense": 0.8126366138458252,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6464568972587585,
+            "final_dense": 0.8291293382644653,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.3": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.6,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.504245400428772,
+            "final_dense": 0.8126366138458252,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6464857459068298,
+            "final_dense": 0.8290996551513672,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        }
+      }
+    },
+    {
+      "scenario": "prompt_injection",
+      "seed": 789,
+      "configs": {
+        "alpha=0.7": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.504245400428772,
+            "final_dense": 0.8236583471298218,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6464857459068298,
+            "final_dense": 0.8352829813957214,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.5": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.5042243003845215,
+            "final_dense": 0.8236817121505737,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6464169025421143,
+            "final_dense": 0.8352702260017395,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.3": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.5042232275009155,
+            "final_dense": 0.826472282409668,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6464857459068298,
+            "final_dense": 0.8352829813957214,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        }
+      }
+    },
+    {
+      "scenario": "prompt_injection",
+      "seed": 1024,
+      "configs": {
+        "alpha=0.7": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.5042837858200073,
+            "final_dense": 0.7808936238288879,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6464857459068298,
+            "final_dense": 0.8379519581794739,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.5": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.504245400428772,
+            "final_dense": 0.7807467579841614,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.646277904510498,
+            "final_dense": 0.8337918519973755,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.3": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.504245400428772,
+            "final_dense": 0.7808936238288879,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6464857459068298,
+            "final_dense": 0.8350743055343628,
+            "initial_sparse": 1.0,
+            "final_sparse": 1.0
+          }
+        }
+      }
+    },
+    {
+      "scenario": "privilege_escalation",
+      "seed": 42,
+      "configs": {
+        "alpha=0.7": {
+          "co_retrieval": true,
+          "stealth": true,
+          "benign_retrieval_rate": 0.2,
+          "overall_success": true,
+          "sleeper_stats": {
+            "initial_dense": 0.4142806828022003,
+            "final_dense": 0.7619940638542175,
+            "initial_sparse": 0.42857142857142855,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6544687747955322,
+            "final_dense": 0.7952144145965576,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.5": {
+          "co_retrieval": true,
+          "stealth": true,
+          "benign_retrieval_rate": 0.2,
+          "overall_success": true,
+          "sleeper_stats": {
+            "initial_dense": 0.4142806828022003,
+            "final_dense": 0.7632755041122437,
+            "initial_sparse": 0.42857142857142855,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6544687747955322,
+            "final_dense": 0.7950448989868164,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.3": {
+          "co_retrieval": true,
+          "stealth": true,
+          "benign_retrieval_rate": 0.0,
+          "overall_success": true,
+          "sleeper_stats": {
+            "initial_dense": 0.4142806828022003,
+            "final_dense": 0.7632755041122437,
+            "initial_sparse": 0.42857142857142855,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6544687747955322,
+            "final_dense": 0.7952144145965576,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          }
+        }
+      }
+    },
+    {
+      "scenario": "privilege_escalation",
+      "seed": 123,
+      "configs": {
+        "alpha=0.7": {
+          "co_retrieval": true,
+          "stealth": true,
+          "benign_retrieval_rate": 0.2,
+          "overall_success": true,
+          "sleeper_stats": {
+            "initial_dense": 0.4142806828022003,
+            "final_dense": 0.7773714661598206,
+            "initial_sparse": 0.42857142857142855,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6544687747955322,
+            "final_dense": 0.8142380118370056,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.5": {
+          "co_retrieval": true,
+          "stealth": true,
+          "benign_retrieval_rate": 0.2,
+          "overall_success": true,
+          "sleeper_stats": {
+            "initial_dense": 0.4142806828022003,
+            "final_dense": 0.7740713953971863,
+            "initial_sparse": 0.42857142857142855,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6544687747955322,
+            "final_dense": 0.8142380118370056,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.3": {
+          "co_retrieval": true,
+          "stealth": true,
+          "benign_retrieval_rate": 0.0,
+          "overall_success": true,
+          "sleeper_stats": {
+            "initial_dense": 0.4142806828022003,
+            "final_dense": 0.7822422981262207,
+            "initial_sparse": 0.42857142857142855,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6544687747955322,
+            "final_dense": 0.8073628544807434,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          }
+        }
+      }
+    },
+    {
+      "scenario": "privilege_escalation",
+      "seed": 456,
+      "configs": {
+        "alpha=0.7": {
+          "co_retrieval": true,
+          "stealth": true,
+          "benign_retrieval_rate": 0.2,
+          "overall_success": true,
+          "sleeper_stats": {
+            "initial_dense": 0.4142806828022003,
+            "final_dense": 0.760705828666687,
+            "initial_sparse": 0.42857142857142855,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6544687747955322,
+            "final_dense": 0.8137528896331787,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.5": {
+          "co_retrieval": true,
+          "stealth": true,
+          "benign_retrieval_rate": 0.0,
+          "overall_success": true,
+          "sleeper_stats": {
+            "initial_dense": 0.41421204805374146,
+            "final_dense": 0.760705828666687,
+            "initial_sparse": 0.42857142857142855,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6544687747955322,
+            "final_dense": 0.803320050239563,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.3": {
+          "co_retrieval": true,
+          "stealth": true,
+          "benign_retrieval_rate": 0.0,
+          "overall_success": true,
+          "sleeper_stats": {
+            "initial_dense": 0.4142806828022003,
+            "final_dense": 0.760705828666687,
+            "initial_sparse": 0.42857142857142855,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6544687747955322,
+            "final_dense": 0.8086721301078796,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          }
+        }
+      }
+    },
+    {
+      "scenario": "privilege_escalation",
+      "seed": 789,
+      "configs": {
+        "alpha=0.7": {
+          "co_retrieval": true,
+          "stealth": true,
+          "benign_retrieval_rate": 0.2,
+          "overall_success": true,
+          "sleeper_stats": {
+            "initial_dense": 0.4142806828022003,
+            "final_dense": 0.7702834606170654,
+            "initial_sparse": 0.42857142857142855,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6544687747955322,
+            "final_dense": 0.796630859375,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.5": {
+          "co_retrieval": true,
+          "stealth": true,
+          "benign_retrieval_rate": 0.0,
+          "overall_success": true,
+          "sleeper_stats": {
+            "initial_dense": 0.4142806828022003,
+            "final_dense": 0.7702834606170654,
+            "initial_sparse": 0.42857142857142855,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6544687747955322,
+            "final_dense": 0.7638909816741943,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.3": {
+          "co_retrieval": true,
+          "stealth": true,
+          "benign_retrieval_rate": 0.0,
+          "overall_success": true,
+          "sleeper_stats": {
+            "initial_dense": 0.4142806828022003,
+            "final_dense": 0.7702834606170654,
+            "initial_sparse": 0.42857142857142855,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6544687747955322,
+            "final_dense": 0.796630859375,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          }
+        }
+      }
+    },
+    {
+      "scenario": "privilege_escalation",
+      "seed": 1024,
+      "configs": {
+        "alpha=0.7": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.4,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.4142806828022003,
+            "final_dense": 0.7625740766525269,
+            "initial_sparse": 0.42857142857142855,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6544687747955322,
+            "final_dense": 0.8267168998718262,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.5": {
+          "co_retrieval": true,
+          "stealth": true,
+          "benign_retrieval_rate": 0.2,
+          "overall_success": true,
+          "sleeper_stats": {
+            "initial_dense": 0.4142806828022003,
+            "final_dense": 0.7625740766525269,
+            "initial_sparse": 0.42857142857142855,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6544687747955322,
+            "final_dense": 0.8267168998718262,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.3": {
+          "co_retrieval": true,
+          "stealth": true,
+          "benign_retrieval_rate": 0.0,
+          "overall_success": true,
+          "sleeper_stats": {
+            "initial_dense": 0.41421204805374146,
+            "final_dense": 0.7625740766525269,
+            "initial_sparse": 0.42857142857142855,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.6544687747955322,
+            "final_dense": 0.8267168998718262,
+            "initial_sparse": 0.7142857142857143,
+            "final_sparse": 1.0
+          }
+        }
+      }
+    },
+    {
+      "scenario": "dns_exfiltration",
+      "seed": 42,
+      "configs": {
+        "alpha=0.7": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.5120909214019775,
+            "final_dense": 0.8229681849479675,
+            "initial_sparse": 0.42857142857142855,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.7781587243080139,
+            "final_dense": 0.854801595211029,
+            "initial_sparse": 0.8571428571428571,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.5": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.5120909214019775,
+            "final_dense": 0.8229681849479675,
+            "initial_sparse": 0.42857142857142855,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.7782341241836548,
+            "final_dense": 0.8548572063446045,
+            "initial_sparse": 0.8571428571428571,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.3": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.5120909214019775,
+            "final_dense": 0.8229681849479675,
+            "initial_sparse": 0.42857142857142855,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.7782341241836548,
+            "final_dense": 0.8548572063446045,
+            "initial_sparse": 0.8571428571428571,
+            "final_sparse": 1.0
+          }
+        }
+      }
+    },
+    {
+      "scenario": "dns_exfiltration",
+      "seed": 123,
+      "configs": {
+        "alpha=0.7": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.5120909214019775,
+            "final_dense": 0.8213030695915222,
+            "initial_sparse": 0.42857142857142855,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.7782341241836548,
+            "final_dense": 0.8370599746704102,
+            "initial_sparse": 0.8571428571428571,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.5": {
+          "co_retrieval": true,
+          "stealth": true,
+          "benign_retrieval_rate": 0.2,
+          "overall_success": true,
+          "sleeper_stats": {
+            "initial_dense": 0.5120909214019775,
+            "final_dense": 0.8213030695915222,
+            "initial_sparse": 0.42857142857142855,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.7782341241836548,
+            "final_dense": 0.8356835842132568,
+            "initial_sparse": 0.8571428571428571,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.3": {
+          "co_retrieval": true,
+          "stealth": true,
+          "benign_retrieval_rate": 0.2,
+          "overall_success": true,
+          "sleeper_stats": {
+            "initial_dense": 0.5120909214019775,
+            "final_dense": 0.8213030695915222,
+            "initial_sparse": 0.42857142857142855,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.7782341241836548,
+            "final_dense": 0.8385721445083618,
+            "initial_sparse": 0.8571428571428571,
+            "final_sparse": 1.0
+          }
+        }
+      }
+    },
+    {
+      "scenario": "dns_exfiltration",
+      "seed": 456,
+      "configs": {
+        "alpha=0.7": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.5120909214019775,
+            "final_dense": 0.8128892183303833,
+            "initial_sparse": 0.42857142857142855,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.7782341241836548,
+            "final_dense": 0.8610845804214478,
+            "initial_sparse": 0.8571428571428571,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.5": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.5120909214019775,
+            "final_dense": 0.8139047622680664,
+            "initial_sparse": 0.42857142857142855,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.7782110571861267,
+            "final_dense": 0.8627690672874451,
+            "initial_sparse": 0.8571428571428571,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.3": {
+          "co_retrieval": true,
+          "stealth": true,
+          "benign_retrieval_rate": 0.2,
+          "overall_success": true,
+          "sleeper_stats": {
+            "initial_dense": 0.5120909214019775,
+            "final_dense": 0.8139047622680664,
+            "initial_sparse": 0.42857142857142855,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.7782341241836548,
+            "final_dense": 0.8627763986587524,
+            "initial_sparse": 0.8571428571428571,
+            "final_sparse": 1.0
+          }
+        }
+      }
+    },
+    {
+      "scenario": "dns_exfiltration",
+      "seed": 789,
+      "configs": {
+        "alpha=0.7": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.5120909214019775,
+            "final_dense": 0.8001912236213684,
+            "initial_sparse": 0.42857142857142855,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.7782341241836548,
+            "final_dense": 0.8684883117675781,
+            "initial_sparse": 0.8571428571428571,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.5": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.5120909214019775,
+            "final_dense": 0.8001912236213684,
+            "initial_sparse": 0.42857142857142855,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.7782341241836548,
+            "final_dense": 0.8684883117675781,
+            "initial_sparse": 0.8571428571428571,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.3": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.5120909214019775,
+            "final_dense": 0.8001912236213684,
+            "initial_sparse": 0.42857142857142855,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.7782178521156311,
+            "final_dense": 0.8684616088867188,
+            "initial_sparse": 0.8571428571428571,
+            "final_sparse": 1.0
+          }
+        }
+      }
+    },
+    {
+      "scenario": "dns_exfiltration",
+      "seed": 1024,
+      "configs": {
+        "alpha=0.7": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.5120909214019775,
+            "final_dense": 0.8000103235244751,
+            "initial_sparse": 0.42857142857142855,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.7782341241836548,
+            "final_dense": 0.8756734132766724,
+            "initial_sparse": 0.8571428571428571,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.5": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.5120909214019775,
+            "final_dense": 0.8000103235244751,
+            "initial_sparse": 0.42857142857142855,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.7782341241836548,
+            "final_dense": 0.8756734132766724,
+            "initial_sparse": 0.8571428571428571,
+            "final_sparse": 1.0
+          }
+        },
+        "alpha=0.3": {
+          "co_retrieval": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false,
+          "sleeper_stats": {
+            "initial_dense": 0.5120909214019775,
+            "final_dense": 0.8000103235244751,
+            "initial_sparse": 0.42857142857142855,
+            "final_sparse": 1.0
+          },
+          "trigger_stats": {
+            "initial_dense": 0.7782341241836548,
+            "final_dense": 0.8756734132766724,
+            "initial_sparse": 0.8571428571428571,
+            "final_sparse": 1.0
+          }
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "alpha=0.7": {
+      "co_retrieval_rate": 1.0,
+      "co_retrieval_count": "25/25",
+      "stealth_rate": 0.2,
+      "stealth_count": "5/25",
+      "overall_rate": 0.2,
+      "overall_count": "5/25"
+    },
+    "alpha=0.5": {
+      "co_retrieval_rate": 1.0,
+      "co_retrieval_count": "25/25",
+      "stealth_rate": 0.36,
+      "stealth_count": "9/25",
+      "overall_rate": 0.36,
+      "overall_count": "9/25"
+    },
+    "alpha=0.3": {
+      "co_retrieval_rate": 1.0,
+      "co_retrieval_count": "25/25",
+      "stealth_rate": 0.44,
+      "stealth_count": "11/25",
+      "overall_rate": 0.44,
+      "overall_count": "11/25"
+    }
+  },
+  "end_time": "2026-03-09T01:11:50.105422"
+}

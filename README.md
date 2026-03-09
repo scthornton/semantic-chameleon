@@ -21,19 +21,62 @@
 
 **Key Findings**:
 - 38.0% co-retrieval success on pure vector retrieval (n=50, 95% CI: 25.9%-51.8%)
-- Hybrid retrieval (α≤0.5) reduces co-retrieval to 0% across all 50 gradient-optimized attacks in our setting
+- Hybrid retrieval (α≤0.5) reduces co-retrieval to 0% across all 50 gradient-optimized attacks
+- Joint sparse+dense optimization partially circumvents hybrid (20-44% success) but significantly raises the bar
+- **Multi-model E2E** (5 LLMs): attack success 46.7% (GPT-5.3) to 93.3% (Llama 4); safety violations 6.7% (Claude) to 93.3% (Llama 4)
+- **FEVER n=25**: 0% overall success across all retrieval configs, confirming corpus-dependent effects at scale
 - Technical corpora show 13-62× worse detection performance than general knowledge bases
 - Query Pattern Differential emerges as most reliable detection method across corpora
-- **NEW (Dec 2025)**: End-to-end LLM evaluation shows 60% attack success rate, 80% safety bypass
-- **NEW (Dec 2025)**: Production RAG case study (156,777 docs) validates corpus-dependency hypothesis
 
 ---
 
-## 🆕 December 2025 Updates
+## March 2026 Updates (AISec '26 Submission)
 
-### End-to-End LLM Evaluation (NEW)
+### Multi-Model End-to-End Evaluation (5 LLMs)
 
-We extended our evaluation to demonstrate that retrieved poisoned documents actually influence LLM output:
+Attack effectiveness varies dramatically across model families:
+
+| Model | Attack Success | Safety Violations | Payload Leakage | Divergence |
+|-------|---------------|-------------------|-----------------|------------|
+| GPT-5.3 | **46.7%** (7/15) | 33.3% | 9.6% | 0.284 |
+| GPT-4o | 53.3% (8/15) | 86.7% | 12.0% | 0.483 |
+| GPT-4o-mini | 53.3% (8/15) | 86.7% | 14.9% | 0.418 |
+| Claude Sonnet 4.6 | 60.0% (9/15) | **6.7%** | 5.7% | 0.196 |
+| Llama 4 Instruct | **93.3%** (14/15) | **93.3%** | **56.8%** | 0.268 |
+
+**Key Insight**: Safety training maturity varies dramatically. Claude shows the strongest safety boundary (6.7% violations despite 60% attack success). Llama 4 is dramatically vulnerable (93% attack success, only 27% clean refusal rate). GPT-5.3 shows measurable improvement over GPT-4o.
+
+### Joint Sparse+Dense Optimization
+
+A knowledgeable attacker who jointly optimizes for both BM25 and vector retrieval can partially circumvent hybrid defense:
+
+| Attack Type | α=0.7 | α=0.5 | α=0.3 |
+|-------------|-------|-------|-------|
+| Gradient-only (baseline) | 0% | 0% | 0% |
+| Joint optimization | **20%** | **36%** | **44%** |
+
+**Key Insight**: Hybrid retrieval raises the attack bar from 38% (pure vector) to 0% (gradient-only on hybrid), but joint optimization achieves 20-44%. Hybrid retrieval is a significant defense, not an absolute one.
+
+### FEVER Large-Scale (n=25)
+
+25 GCG-optimized attacks on FEVER Wikipedia (2,000-doc representative sample):
+
+| Config | Co-Retrieval | Stealth | Overall Success |
+|--------|-------------|---------|-----------------|
+| Pure Vector (α=1.0) | 100% | 0% | **0%** |
+| Hybrid (α=0.7) | 100% | 0% | **0%** |
+| Hybrid (α=0.5) | 100% | 0% | **0%** |
+| Hybrid (α=0.3) | 100% | 0% | **0%** |
+
+**Key Insight**: Confirms n=9 pilot at 2.8× scale. General-vocabulary corpora make attack documents conspicuous regardless of retrieval architecture.
+
+---
+
+## December 2025 Updates
+
+### End-to-End LLM Evaluation (Single Model)
+
+Initial evaluation against GPT-4o-mini (15 attack scenarios):
 
 | Metric | Result |
 |--------|--------|
@@ -42,18 +85,14 @@ We extended our evaluation to demonstrate that retrieved poisoned documents actu
 | Response Divergence | 46% average |
 | Model Tested | GPT-4o-mini |
 
-**Key Insight**: Even with model safety training, RAG context can override guardrails. 73% of queries were refused with clean context, but 60% provided malicious instructions with poisoned context.
+### Production RAG Case Study
 
-### Production RAG Case Study (NEW)
-
-Validated corpus-dependency hypothesis against a real 156,777-document corpus:
+Validated corpus-dependency hypothesis against a 156,777-document production corpus:
 
 | Attack Type | Retrieval Success | Trigger Rank |
 |------------|-------------------|--------------|
 | Naive (generic) | 0% | N/A |
 | Adaptive (corpus-optimized) | 100% | #1 |
-
-**Key Insight**: Attacks don't transfer across corpora. Naive attacks fail completely; adaptive attacks using the target embedding model succeed reliably.
 
 ---
 
@@ -95,9 +134,20 @@ semantic-chameleon/
 │   ├── fever_instructions.md         # How to obtain FEVER dataset
 │   └── corpus_statistics.json        # Corpus metadata (sizes, domains)
 │
-├── results/                           # NEW: Experimental results
-│   ├── e2e_evaluation_results.json   # End-to-end LLM evaluation
-│   ├── panw_case_study.json          # Production RAG case study
+├── experiments/                        # Experiment scripts (March 2026)
+│   ├── exp1_fever_large_scale.py     # FEVER n=25 evaluation
+│   ├── exp2_multimodel_e2e.py        # Multi-model E2E (5 LLMs)
+│   ├── exp3_joint_hybrid_attack.py   # Joint sparse+dense optimization
+│   ├── setup_data.py                 # Data download and embedding setup
+│   └── requirements.txt              # Experiment dependencies
+│
+├── results/                           # Experimental results
+│   ├── e2e_evaluation_results.json   # Dec 2025: E2E LLM evaluation
+│   ├── panw_case_study.json          # Dec 2025: Production case study
+│   ├── march-2026/                   # March 2026 experiments
+│   │   ├── exp1_fever_large_scale_results.json
+│   │   ├── exp2_multimodel_e2e_results.json
+│   │   └── exp3_joint_hybrid_attack_results.json
 │   └── README.md                     # Results documentation
 │
 ├── paper/                             # Paper materials
@@ -270,7 +320,7 @@ MIT License - see [`LICENSE`](LICENSE) for details.
 
 ---
 
-**Last Updated**: December 2025
+**Last Updated**: March 2026
 **Paper DOI**: [10.5281/zenodo.18080200](https://doi.org/10.5281/zenodo.18080200)
 **Code DOI**: [10.5281/zenodo.18079735](https://doi.org/10.5281/zenodo.18079735)
 **Status**: Published on Zenodo (defensive research materials)

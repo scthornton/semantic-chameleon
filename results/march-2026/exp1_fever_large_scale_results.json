@@ -1,0 +1,2090 @@
+{
+  "experiment": "fever_large_scale",
+  "start_time": "2026-03-08T22:28:43.148527",
+  "config": {
+    "n_attacks": 25,
+    "embedding_model": "text-embedding-3-small",
+    "num_iterations": 50,
+    "corpus_size": 2000,
+    "alpha_values": [
+      1.0,
+      0.7,
+      0.5,
+      0.3
+    ],
+    "top_k_values": [
+      5,
+      10
+    ],
+    "stealth_threshold": 0.3
+  },
+  "trial_results": [
+    {
+      "scenario": "authentication_bypass",
+      "seed": 42,
+      "optimization": {
+        "sleeper": {
+          "initial_sim": 0.5263365507125854,
+          "final_sim": 0.6312443017959595
+        },
+        "trigger": {
+          "initial_sim": 0.7085193395614624,
+          "final_sim": 0.7810276746749878
+        }
+      },
+      "retrieval_results": {
+        "alpha=1.0_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=1.0_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        }
+      }
+    },
+    {
+      "scenario": "authentication_bypass",
+      "seed": 123,
+      "optimization": {
+        "sleeper": {
+          "initial_sim": 0.5263365507125854,
+          "final_sim": 0.6477082967758179
+        },
+        "trigger": {
+          "initial_sim": 0.7085534930229187,
+          "final_sim": 0.7835530042648315
+        }
+      },
+      "retrieval_results": {
+        "alpha=1.0_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=1.0_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        }
+      }
+    },
+    {
+      "scenario": "authentication_bypass",
+      "seed": 456,
+      "optimization": {
+        "sleeper": {
+          "initial_sim": 0.5263365507125854,
+          "final_sim": 0.6291406154632568
+        },
+        "trigger": {
+          "initial_sim": 0.7085133790969849,
+          "final_sim": 0.794512152671814
+        }
+      },
+      "retrieval_results": {
+        "alpha=1.0_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=1.0_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        }
+      }
+    },
+    {
+      "scenario": "authentication_bypass",
+      "seed": 789,
+      "optimization": {
+        "sleeper": {
+          "initial_sim": 0.5263365507125854,
+          "final_sim": 0.6378324031829834
+        },
+        "trigger": {
+          "initial_sim": 0.7085193395614624,
+          "final_sim": 0.7552025318145752
+        }
+      },
+      "retrieval_results": {
+        "alpha=1.0_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=1.0_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        }
+      }
+    },
+    {
+      "scenario": "authentication_bypass",
+      "seed": 1024,
+      "optimization": {
+        "sleeper": {
+          "initial_sim": 0.5263365507125854,
+          "final_sim": 0.6212362051010132
+        },
+        "trigger": {
+          "initial_sim": 0.7085193395614624,
+          "final_sim": 0.7882582545280457
+        }
+      },
+      "retrieval_results": {
+        "alpha=1.0_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=1.0_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        }
+      }
+    },
+    {
+      "scenario": "data_exfiltration",
+      "seed": 42,
+      "optimization": {
+        "sleeper": {
+          "initial_sim": 0.6374574899673462,
+          "final_sim": 0.6617474555969238
+        },
+        "trigger": {
+          "initial_sim": 0.7270017862319946,
+          "final_sim": 0.7355554103851318
+        }
+      },
+      "retrieval_results": {
+        "alpha=1.0_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=1.0_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        }
+      }
+    },
+    {
+      "scenario": "data_exfiltration",
+      "seed": 123,
+      "optimization": {
+        "sleeper": {
+          "initial_sim": 0.6374574899673462,
+          "final_sim": 0.6733629703521729
+        },
+        "trigger": {
+          "initial_sim": 0.7270293235778809,
+          "final_sim": 0.784981369972229
+        }
+      },
+      "retrieval_results": {
+        "alpha=1.0_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=1.0_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        }
+      }
+    },
+    {
+      "scenario": "data_exfiltration",
+      "seed": 456,
+      "optimization": {
+        "sleeper": {
+          "initial_sim": 0.6374574899673462,
+          "final_sim": 0.6729975938796997
+        },
+        "trigger": {
+          "initial_sim": 0.7270293235778809,
+          "final_sim": 0.7595217227935791
+        }
+      },
+      "retrieval_results": {
+        "alpha=1.0_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=1.0_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        }
+      }
+    },
+    {
+      "scenario": "data_exfiltration",
+      "seed": 789,
+      "optimization": {
+        "sleeper": {
+          "initial_sim": 0.6374574899673462,
+          "final_sim": 0.6682727336883545
+        },
+        "trigger": {
+          "initial_sim": 0.7270293235778809,
+          "final_sim": 0.7636167407035828
+        }
+      },
+      "retrieval_results": {
+        "alpha=1.0_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=1.0_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        }
+      }
+    },
+    {
+      "scenario": "data_exfiltration",
+      "seed": 1024,
+      "optimization": {
+        "sleeper": {
+          "initial_sim": 0.6374574899673462,
+          "final_sim": 0.6889358758926392
+        },
+        "trigger": {
+          "initial_sim": 0.7270293235778809,
+          "final_sim": 0.7629829049110413
+        }
+      },
+      "retrieval_results": {
+        "alpha=1.0_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=1.0_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        }
+      }
+    },
+    {
+      "scenario": "prompt_injection",
+      "seed": 42,
+      "optimization": {
+        "sleeper": {
+          "initial_sim": 0.5409956574440002,
+          "final_sim": 0.6382796764373779
+        },
+        "trigger": {
+          "initial_sim": 0.6593641638755798,
+          "final_sim": 0.7182251811027527
+        }
+      },
+      "retrieval_results": {
+        "alpha=1.0_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=1.0_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        },
+        "alpha=0.7_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        },
+        "alpha=0.5_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        },
+        "alpha=0.3_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        }
+      }
+    },
+    {
+      "scenario": "prompt_injection",
+      "seed": 123,
+      "optimization": {
+        "sleeper": {
+          "initial_sim": 0.5409956574440002,
+          "final_sim": 0.6461297273635864
+        },
+        "trigger": {
+          "initial_sim": 0.6593641638755798,
+          "final_sim": 0.7276456356048584
+        }
+      },
+      "retrieval_results": {
+        "alpha=1.0_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=1.0_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        },
+        "alpha=0.7_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        },
+        "alpha=0.5_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        },
+        "alpha=0.3_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        }
+      }
+    },
+    {
+      "scenario": "prompt_injection",
+      "seed": 456,
+      "optimization": {
+        "sleeper": {
+          "initial_sim": 0.5409956574440002,
+          "final_sim": 0.6393611431121826
+        },
+        "trigger": {
+          "initial_sim": 0.6593641638755798,
+          "final_sim": 0.7277477979660034
+        }
+      },
+      "retrieval_results": {
+        "alpha=1.0_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=1.0_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        },
+        "alpha=0.5_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        },
+        "alpha=0.3_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        }
+      }
+    },
+    {
+      "scenario": "prompt_injection",
+      "seed": 789,
+      "optimization": {
+        "sleeper": {
+          "initial_sim": 0.5409956574440002,
+          "final_sim": 0.6332058906555176
+        },
+        "trigger": {
+          "initial_sim": 0.6593641638755798,
+          "final_sim": 0.7116385102272034
+        }
+      },
+      "retrieval_results": {
+        "alpha=1.0_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=1.0_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        },
+        "alpha=0.7_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        },
+        "alpha=0.5_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        },
+        "alpha=0.3_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        }
+      }
+    },
+    {
+      "scenario": "prompt_injection",
+      "seed": 1024,
+      "optimization": {
+        "sleeper": {
+          "initial_sim": 0.5409956574440002,
+          "final_sim": 0.6326553225517273
+        },
+        "trigger": {
+          "initial_sim": 0.6593641638755798,
+          "final_sim": 0.73675537109375
+        }
+      },
+      "retrieval_results": {
+        "alpha=1.0_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=1.0_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        },
+        "alpha=0.7_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        },
+        "alpha=0.5_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        },
+        "alpha=0.3_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        }
+      }
+    },
+    {
+      "scenario": "privilege_escalation",
+      "seed": 42,
+      "optimization": {
+        "sleeper": {
+          "initial_sim": 0.4220500886440277,
+          "final_sim": 0.524517834186554
+        },
+        "trigger": {
+          "initial_sim": 0.6733466386795044,
+          "final_sim": 0.7304948568344116
+        }
+      },
+      "retrieval_results": {
+        "alpha=1.0_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=1.0_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        },
+        "alpha=0.5_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        },
+        "alpha=0.3_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        }
+      }
+    },
+    {
+      "scenario": "privilege_escalation",
+      "seed": 123,
+      "optimization": {
+        "sleeper": {
+          "initial_sim": 0.4220500886440277,
+          "final_sim": 0.540785014629364
+        },
+        "trigger": {
+          "initial_sim": 0.6734294295310974,
+          "final_sim": 0.7277644872665405
+        }
+      },
+      "retrieval_results": {
+        "alpha=1.0_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=1.0_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        },
+        "alpha=0.5_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        },
+        "alpha=0.3_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        }
+      }
+    },
+    {
+      "scenario": "privilege_escalation",
+      "seed": 456,
+      "optimization": {
+        "sleeper": {
+          "initial_sim": 0.4220721125602722,
+          "final_sim": 0.5369648933410645
+        },
+        "trigger": {
+          "initial_sim": 0.6733466386795044,
+          "final_sim": 0.718400239944458
+        }
+      },
+      "retrieval_results": {
+        "alpha=1.0_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=1.0_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        },
+        "alpha=0.5_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        },
+        "alpha=0.3_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        }
+      }
+    },
+    {
+      "scenario": "privilege_escalation",
+      "seed": 789,
+      "optimization": {
+        "sleeper": {
+          "initial_sim": 0.4220500886440277,
+          "final_sim": 0.5251492857933044
+        },
+        "trigger": {
+          "initial_sim": 0.6732586622238159,
+          "final_sim": 0.7027447819709778
+        }
+      },
+      "retrieval_results": {
+        "alpha=1.0_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=1.0_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        },
+        "alpha=0.5_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        },
+        "alpha=0.3_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        }
+      }
+    },
+    {
+      "scenario": "privilege_escalation",
+      "seed": 1024,
+      "optimization": {
+        "sleeper": {
+          "initial_sim": 0.4220500886440277,
+          "final_sim": 0.537381112575531
+        },
+        "trigger": {
+          "initial_sim": 0.6733466386795044,
+          "final_sim": 0.7100178599357605
+        }
+      },
+      "retrieval_results": {
+        "alpha=1.0_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=1.0_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        },
+        "alpha=0.5_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        },
+        "alpha=0.3_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 0.8,
+          "overall_success": false
+        }
+      }
+    },
+    {
+      "scenario": "network_exfiltration",
+      "seed": 42,
+      "optimization": {
+        "sleeper": {
+          "initial_sim": 0.5085461735725403,
+          "final_sim": 0.6298096776008606
+        },
+        "trigger": {
+          "initial_sim": 0.7699398994445801,
+          "final_sim": 0.796133279800415
+        }
+      },
+      "retrieval_results": {
+        "alpha=1.0_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=1.0_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        }
+      }
+    },
+    {
+      "scenario": "network_exfiltration",
+      "seed": 123,
+      "optimization": {
+        "sleeper": {
+          "initial_sim": 0.5085461735725403,
+          "final_sim": 0.625788688659668
+        },
+        "trigger": {
+          "initial_sim": 0.7699398994445801,
+          "final_sim": 0.8046964406967163
+        }
+      },
+      "retrieval_results": {
+        "alpha=1.0_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=1.0_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        }
+      }
+    },
+    {
+      "scenario": "network_exfiltration",
+      "seed": 456,
+      "optimization": {
+        "sleeper": {
+          "initial_sim": 0.5085461735725403,
+          "final_sim": 0.6429274678230286
+        },
+        "trigger": {
+          "initial_sim": 0.7699398994445801,
+          "final_sim": 0.8018444180488586
+        }
+      },
+      "retrieval_results": {
+        "alpha=1.0_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=1.0_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        }
+      }
+    },
+    {
+      "scenario": "network_exfiltration",
+      "seed": 789,
+      "optimization": {
+        "sleeper": {
+          "initial_sim": 0.5085461735725403,
+          "final_sim": 0.6250430345535278
+        },
+        "trigger": {
+          "initial_sim": 0.7699620723724365,
+          "final_sim": 0.7843906879425049
+        }
+      },
+      "retrieval_results": {
+        "alpha=1.0_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=1.0_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        }
+      }
+    },
+    {
+      "scenario": "network_exfiltration",
+      "seed": 1024,
+      "optimization": {
+        "sleeper": {
+          "initial_sim": 0.5085461735725403,
+          "final_sim": 0.6060484647750854
+        },
+        "trigger": {
+          "initial_sim": 0.7699398994445801,
+          "final_sim": 0.7983878254890442
+        }
+      },
+      "retrieval_results": {
+        "alpha=1.0_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=1.0_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.7_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.5_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=5": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        },
+        "alpha=0.3_k=10": {
+          "co_retrieval": true,
+          "sleeper_retrieved": true,
+          "trigger_retrieved": true,
+          "stealth": false,
+          "benign_retrieval_rate": 1.0,
+          "overall_success": false
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "alpha=1.0_k=5": {
+      "co_retrieval_rate": 1.0,
+      "co_retrieval_count": "25/25",
+      "stealth_rate": 0.0,
+      "stealth_count": "0/25",
+      "overall_rate": 0.0,
+      "overall_count": "0/25"
+    },
+    "alpha=1.0_k=10": {
+      "co_retrieval_rate": 1.0,
+      "co_retrieval_count": "25/25",
+      "stealth_rate": 0.0,
+      "stealth_count": "0/25",
+      "overall_rate": 0.0,
+      "overall_count": "0/25"
+    },
+    "alpha=0.7_k=5": {
+      "co_retrieval_rate": 1.0,
+      "co_retrieval_count": "25/25",
+      "stealth_rate": 0.0,
+      "stealth_count": "0/25",
+      "overall_rate": 0.0,
+      "overall_count": "0/25"
+    },
+    "alpha=0.7_k=10": {
+      "co_retrieval_rate": 1.0,
+      "co_retrieval_count": "25/25",
+      "stealth_rate": 0.0,
+      "stealth_count": "0/25",
+      "overall_rate": 0.0,
+      "overall_count": "0/25"
+    },
+    "alpha=0.5_k=5": {
+      "co_retrieval_rate": 1.0,
+      "co_retrieval_count": "25/25",
+      "stealth_rate": 0.0,
+      "stealth_count": "0/25",
+      "overall_rate": 0.0,
+      "overall_count": "0/25"
+    },
+    "alpha=0.5_k=10": {
+      "co_retrieval_rate": 1.0,
+      "co_retrieval_count": "25/25",
+      "stealth_rate": 0.0,
+      "stealth_count": "0/25",
+      "overall_rate": 0.0,
+      "overall_count": "0/25"
+    },
+    "alpha=0.3_k=5": {
+      "co_retrieval_rate": 1.0,
+      "co_retrieval_count": "25/25",
+      "stealth_rate": 0.0,
+      "stealth_count": "0/25",
+      "overall_rate": 0.0,
+      "overall_count": "0/25"
+    },
+    "alpha=0.3_k=10": {
+      "co_retrieval_rate": 1.0,
+      "co_retrieval_count": "25/25",
+      "stealth_rate": 0.0,
+      "stealth_count": "0/25",
+      "overall_rate": 0.0,
+      "overall_count": "0/25"
+    }
+  },
+  "end_time": "2026-03-08T22:56:06.497586"
+}

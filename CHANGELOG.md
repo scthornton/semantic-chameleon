@@ -7,7 +7,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Added
+### March 2026 — AISec '26 Submission
+
+**Multi-Model E2E Evaluation (5 LLMs)**:
+- GPT-5.3: 46.7% attack success, 33.3% safety violations (strongest resistance)
+- GPT-4o: 53.3% attack success, 86.7% safety violations
+- GPT-4o-mini: 53.3% attack success, 86.7% safety violations
+- Claude Sonnet 4.6: 60.0% attack success, 6.7% safety violations (strongest safety boundary)
+- Llama 4 Instruct: 93.3% attack success, 93.3% safety violations (weakest)
+
+**Joint Sparse+Dense Optimization**:
+- Joint GCG optimization partially circumvents hybrid retrieval (20-44% success)
+- Gradient-only attacks remain at 0% on hybrid (confirming prior results)
+- Establishes hybrid retrieval as significant but not absolute defense
+
+**FEVER Large-Scale Confirmation (n=25)**:
+- 25 GCG attacks on FEVER Wikipedia sample
+- 0% overall success across all retrieval configurations (pure vector and hybrid)
+- Confirms n=9 cross-corpus pilot at 2.8× scale
+
+**Added**:
+- `experiments/` directory with self-contained experiment scripts
+- `results/march-2026/` with all three experiment result files
+- Updated README with March 2026 findings
+
+### Initial Release
+
 - Research repository for "Semantic Chameleon: Corpus-Dependent Poisoning Attacks and Defenses in RAG Systems"
 - Published research paper with DOI (Zenodo: 10.5281/zenodo.18080200)
 - Code implementation with DOI (Zenodo: 10.5281/zenodo.18079735)
