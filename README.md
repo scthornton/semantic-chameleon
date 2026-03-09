@@ -15,6 +15,8 @@
 
 **Code (This Repo)**: [https://doi.org/10.5281/zenodo.18079735](https://doi.org/10.5281/zenodo.18079735)
 
+**Anonymous Review Copy**: [https://anonymous.4open.science/r/semantic-chameleon-B610/](https://anonymous.4open.science/r/semantic-chameleon-B610/)
+
 **Author**: Scott Thornton (perfecXion.ai)
 
 **Abstract**: This work characterizes how corpus composition and retrieval architecture jointly affect RAG security. We find that technical corpora are 13-62× harder to defend than general knowledge bases, and that simple hybrid BM25+vector retrieval neutralizes gradient-optimized attacks in our experiments.
