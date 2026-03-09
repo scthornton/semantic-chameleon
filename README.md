@@ -5,11 +5,11 @@
 
 **Research Repository for "Semantic Chameleon: Corpus-Dependent Poisoning Attacks and Defenses in RAG Systems"**
 
-⚠️ **DEFENSIVE RESEARCH ONLY**: This repository contains sanitized educational materials for understanding and defending against RAG poisoning attacks. No weaponized attack materials are included.
+**DEFENSIVE RESEARCH ONLY**: This repository contains sanitized educational materials for understanding and defending against RAG poisoning attacks. No weaponized attack materials are included.
 
 ---
 
-## 📄 Paper
+## Paper
 
 **Paper (PDF)**: [https://doi.org/10.5281/zenodo.18080200](https://doi.org/10.5281/zenodo.18080200)
 
@@ -96,7 +96,7 @@ Validated corpus-dependency hypothesis against a 156,777-document production cor
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 semantic-chameleon/
@@ -166,21 +166,21 @@ semantic-chameleon/
 
 ---
 
-## 🛡️ Defensive Focus
+## Defensive Focus
 
 This repository provides:
 
-✅ **Detection methods** - 5 detection approaches with complete implementations
-✅ **Defense mechanisms** - Hybrid retrieval and monitoring strategies
-✅ **Evaluation tools** - Metrics, statistical tests, ROC analysis
-✅ **Corpus analysis** - Understanding corpus-dependent security properties
-✅ **Deployment guides** - Practical guidance for securing RAG systems
+- **Detection methods** - 5 detection approaches with complete implementations
+- **Defense mechanisms** - Hybrid retrieval and monitoring strategies
+- **Evaluation tools** - Metrics, statistical tests, ROC analysis
+- **Corpus analysis** - Understanding corpus-dependent security properties
+- **Deployment guides** - Practical guidance for securing RAG systems
 
-❌ **NOT included** - Working attack implementations, weaponizable exploits, malicious document generation
+**NOT included** - Working attack implementations, weaponizable exploits, malicious document generation
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 
@@ -228,7 +228,7 @@ results = retriever.retrieve(query, k=10)
 
 ---
 
-## 📊 Reproducing Paper Results
+## Reproducing Paper Results
 
 See [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md) for complete step-by-step instructions.
 
@@ -243,7 +243,7 @@ See [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md) for complete step-by-st
 
 ---
 
-## 🔬 Research Ethics
+## Research Ethics
 
 This research follows responsible disclosure practices:
 
@@ -256,7 +256,7 @@ See [`docs/ETHICAL_CONSIDERATIONS.md`](docs/ETHICAL_CONSIDERATIONS.md) for full 
 
 ---
 
-## 📖 Citation
+## Citation
 
 If you use this research or code, please cite:
 
@@ -276,7 +276,7 @@ If you use this research or code, please cite:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions that advance RAG security defenses:
 
@@ -291,7 +291,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for guidelines.
 
 ---
 
-## 📧 Contact
+## Contact
 
 **Scott Thornton**
 - Website: https://perfecxion.ai
@@ -303,7 +303,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for guidelines.
 
 ---
 
-## 📜 License
+## License
 
 MIT License - see [`LICENSE`](LICENSE) for details.
 
@@ -311,7 +311,7 @@ MIT License - see [`LICENSE`](LICENSE) for details.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Security Stack Exchange community for public dataset
 - FEVER dataset maintainers
